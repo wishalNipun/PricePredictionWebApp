@@ -1,1 +1,47 @@
-<p>home works!</p>
+
+<div class="main">
+    <div>
+        <h1>Input Your Mobile Phone Information</h1>
+        <form  [formGroup]="mobileForm">
+           <div class="input-group">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Brand</mat-label>
+                    <input matInput type="text" name="brand"  id="brand" class="user-input" formControlName="brand" error/>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Model</mat-label>
+                    <input matInput type="text" name="model" id="model" class="user-input" formControlName="model" error/>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Color</mat-label>
+                    <input matInput type="text" name="color" id="color" class="user-input" formControlName="color" error/>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Memory</mat-label>
+                    <input matInput type="text" name="memory" id="memory" class="user-input" formControlName="memory" error/>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Storage</mat-label>
+                    <input matInput type="text" name="storage" id="storage" class="user-input" formControlName="storage" error/>
+                </mat-form-field>
+                
+           </div>
+        </form>
+        <div class="btn-group">
+            <button mat-raised-button (click)="checkBtnOnHandle()" [disabled]="mobileForm.invalid">Click To Predict</button>
+            
+            <button mat-raised-button class="ghost-btn" (click)="resetBtnOnHandle()">Reset</button>
+        </div> 
+    
+        <div>
+            <div>
+                <h3>Selling Price</h3>
+            </div>
+            <div>
+                <h3>Original Price</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+

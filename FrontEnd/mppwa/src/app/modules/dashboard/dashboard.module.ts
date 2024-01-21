@@ -5,14 +5,16 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetailComponent } from './components/detail/detail.component';
-import {Component} from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
+  
   declarations: [
     DashboardComponent,
     HomeComponent,
@@ -22,8 +24,13 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     DashboardRoutingModule,
     MatButtonModule, 
-    MatDividerModule, 
-    MatIconModule
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule, 
+    MatFormFieldModule, 
+    MatInputModule,
+    HttpClientModule
   ]
 })
 export class DashboardModule { }
