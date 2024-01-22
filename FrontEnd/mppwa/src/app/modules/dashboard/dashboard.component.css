@@ -14,7 +14,7 @@
 }
 .title{
     padding-left: 10px;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -22,5 +22,5 @@
     padding-right: 100px;
     padding-left: 100px;
     padding-top: 30px;
-    background-color: rgba(255, 255, 255, 0.836);
+    background-color: rgba(17, 60, 83, 0.836);
 }

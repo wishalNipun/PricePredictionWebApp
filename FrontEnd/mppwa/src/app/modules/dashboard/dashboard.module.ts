@@ -10,7 +10,7 @@ import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule, 
     MatFormFieldModule, 
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule 
   ]
 })
 export class DashboardModule { }
